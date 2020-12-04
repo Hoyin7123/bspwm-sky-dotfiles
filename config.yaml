@@ -1,0 +1,49 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  d_polybar:
+    src: config/polybar
+    dst: ~/.config/polybar
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
+  d_picom:
+    src: config/picom
+    dst: ~/.config/picom
+  d_bspwm:
+    src: config/bspwm
+    dst: ~/.config/bspwm
+  d_cava:
+    src: config/cava
+    dst: ~/.config/cava
+  d_ranger:
+    src: config/ranger
+    dst: ~/.config/ranger
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  d_alacritty:
+    src: config/alacritty
+    dst: ~/.config/alacritty
+  d_sxhkd:
+    src: config/sxhkd
+    dst: ~/.config/sxhkd
+profiles:
+  arch:
+    dotfiles:
+    - d_polybar
+    - d_kitty
+    - d_picom
+    - d_bspwm
+    - d_cava
+    - d_ranger
+    - d_rofi
+    - d_alacritty
+    - d_sxhkd
